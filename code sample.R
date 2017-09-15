@@ -9,3 +9,8 @@ plot(x,y)
 ##linear regression
 m <- lm(y~x)
 summary(m)
+
+##better plot
+
+plot(m$residuals~m$fitted)
+abline(0,0, lty=2, col="gray")
